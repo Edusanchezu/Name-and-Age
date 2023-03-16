@@ -1,0 +1,31 @@
+/*
+For each programming code it's necessary to use this steps: 
+Edition      .c
+Compilation  .o
+Link         .exe
+Execute 
+Debug
+*/
+#include <stdio.h>
+#include <locale.h>
+
+int main(void)
+{
+  setlocale(LC_CTYPE,"Spanish");
+  char name[80];
+  int age;
+  printf("Write your name: ");
+  gets(name);
+
+  printf("Indica tu edad: ");
+  scanf("%d", &age);
+  /*
+  %d For a whole number
+  %f For a float number
+  %lf For a double number
+  %c for a character
+  %s For a String entity
+  */
+  printf("Welcome \"%s\", of %d", name, age);
+  
+}
